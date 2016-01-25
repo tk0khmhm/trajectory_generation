@@ -1,0 +1,26 @@
+<package>
+  <description brief="trajectory_generation">
+
+     trajectory_generation
+
+  </description>
+  <author>amsl</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/trajectory_generation</url>
+  
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -ltrajectory_generation"/>
+  </export>
+  
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="nav_msgs"/>
+  <depend package="visualization_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="tf"/>
+  <rosdep name="eigen"/>
+
+</package>
+
+
